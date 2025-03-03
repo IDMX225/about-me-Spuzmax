@@ -11,9 +11,13 @@ h1, h2, h3, h4, h5, h6 {
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
+    text-align: center;
     font-size:40pt;
 }
 
+h2 {
+    font-size:20pt;
+}
 header {
     text-align: center;
 }
@@ -32,5 +36,15 @@ header {
 
 #bio {
     text-align: center;
+
+}
+
+#hobbies ul li {
+    border-left: 5px solid red;
+    background-color: #f1f1f1;
+    list-style-type:none;
+    padding: 10px 20px;
+    color: black;
+
 
 }
