@@ -57,7 +57,7 @@ header {
 
 #gallery {
     border: 4px solid #4F6270;
-
+    margin-bottom: 2rem;
 }
 
 #gallery img {
@@ -67,4 +67,40 @@ header {
 
 #gallery figure {
     text-align: center;
+}
+
+/* Literature */
+
+#lit {
+    border: 4px solid #4F6270;
+    margin-bottom: 2rem;
+
+}
+
+#lit div {
+    padding:2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#lit div p {
+    padding: 0.3rem 0;
+    clear:both;
+}
+
+/* Dropcaps */
+
+#lit div p::first-letter {
+    color: darkgreen;
+    background-color: whitesmoke;
+    float:left;
+    font-size: 2em;
+    padding:.25em;
+    margin-right:.25em;
+    line-height:.65;
+    border:3px solid black;
+    font-family: 'Brush Script MT', cursive;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+    
 }
