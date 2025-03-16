@@ -1,4 +1,8 @@
-body {
+/* * {
+    outline: 1px solid red;
+}
+
+ */body {
     font-family: "Audiowide", serif;
     font-weight: 400;
     font-style: normal;;
@@ -93,7 +97,7 @@ header {
 
 /* Dropcaps */
 
-#lit div p::first-letter {
+#lit div p:first-child:first-letter {
     color: darkgreen;
     background-color: whitesmoke;
     float:left;
@@ -104,9 +108,10 @@ header {
     border:3px solid black;
     font-family: 'Brush Script MT', cursive;
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
-    box-shadow: 4px 4px 4px rgba(0,0,0,.5);
-    
+    box-shadow: 4px 4px 4px rgba(0,0,0,.5);   
 }
+
+/* tablet size */
 @media screen and (min-width: 60em) {
     
     figure {
@@ -120,5 +125,40 @@ header {
         align-items: center;
         font-size: 2rem;
         margin-left: 1rem;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    #lit div {
+        max-width: 100%;
+        columns: 25rem;
+    }
+}
+
+/* full screen size */
+@media screen and (min-width: 100em) {
+    
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #gallery h2 {
+        grid-column: 1/-1;
+    }
+
+    figure {
+        display: block;
+    }
+
+    #lit div {
+        max-width: 100%;
+        columns: 30rem;
     }
 }
