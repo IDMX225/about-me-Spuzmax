@@ -1,8 +1,9 @@
 /* * {
     outline: 1px solid red;
 }
+/* Mobile first */
 
- */body {
+ body {
     font-family: "Audiowide", serif;
     font-weight: 400;
     font-style: normal;;
@@ -76,6 +77,40 @@ header {
     text-align: center;
 }
 
+/* #myVideo {
+    max-width: 100%;
+    border: 4px solid #4F6270;
+    margin-bottom: 2rem;
+    align-self: center;
+} */
+
+.video-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #4F6270;
+}
+
+.video-caption {
+    margin-top: 8px;
+    font-size: 14px;
+    color:#0433aa;
+    text-align: center;    
+}
 /* Literature */
 
 #lit {
@@ -112,7 +147,7 @@ header {
 }
 
 /* tablet size */
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 768px) {
     
     figure {
         display: grid;
@@ -131,6 +166,10 @@ header {
         width: 100%;
     }
 
+    .video-caption {
+        font-size: 16px;
+    }
+
     #lit div {
         max-width: 100%;
         columns: 25rem;
@@ -138,7 +177,7 @@ header {
 }
 
 /* full screen size */
-@media screen and (min-width: 100em) {
+@media screen and (min-width: 1024px) {
     
     #gallery {
         display: grid;
@@ -155,6 +194,10 @@ header {
 
     figure {
         display: block;
+    }
+
+    .video-caption {
+        font-size: 18px;
     }
 
     #lit div {
