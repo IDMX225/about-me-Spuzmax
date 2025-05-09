@@ -79,26 +79,26 @@ header {
 
 /* Literature */
 
-#lit {
+#blog {
     border: 4px solid #4F6270;
     margin-bottom: 2rem;
 
 }
 
-#lit div {
+#blog div {
     padding:2rem;
     max-width: 40rem;
     margin: 0 auto;
 }
 
-#lit div p {
+#blog div p {
     padding: 0.3rem 0;
     clear:both;
 }
 
 /* Dropcaps */
 
-#lit div p:first-child:first-letter {
+#blog div p:first-child:first-letter {
     color: darkgreen;
     background-color: whitesmoke;
     float:left;
