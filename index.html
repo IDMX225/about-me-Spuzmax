@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Monda:wght@400..700&display=swap" rel="stylesheet">
@@ -17,21 +18,20 @@
 
     <header>
         <!--the header shows logo and page title-->
-       
-        <nav class="navbar">
-            <div class="logo">
-                <img src="img/logo-96X96.svg" class="logo-img" alt="Blue origami logo">
-                <h1>Web Dev I - Online!</h1>
-            </div>            
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#bio" class="nav-links">Bio</a></li>
-                    <li><a href="#gallery" class="nav-links">Gallery</a></li>
-                    <li><a href="#blog" class="nav-links">Blog</a></li>
-                    <li><a href="#contact" class="nav-links">Contact Me</a></li>
-                </ul>
-            </div>
+        <img src="img/logo-al2.svg" class="logo-img" alt="My initials as a logo">
+        <h2 class="logo">Web Dev I - Online!</h2>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#bio" class="nav-links">Bio</a></li>
+                <li><a href="#gallery" class="nav-links">Gallery</a></li>
+                <li><a href="#blog" class="nav-links">Blog</a></li>
+                <li><a href="#contact" class="nav-links">Contact Me</a></li>
+            </ul>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
 
     <main>
@@ -54,30 +54,40 @@
             <h2>Biography:</h2>
 
             <div>
-                <p>I want to be...</p>
+                <p>I started out posessing excessive knowledge...</p>
 
-                <p>The Master of Anti-Gravity!!</p>
+                <p>First, I knew I wanted to be an Astronaut. Then I knew I wanted to be an Air Force pilot. I knew I wanted to be a lawyer. I knew I wanted to be an actor. I knew I wanted to be a stuntman... You get the idea.</p>
 
-                <p>My favourite way to work is... (mis-spelling due to mis-spent youth watching <a href="https://en.wikipedia.org/wiki/Monty_Python's_Flying_Circus">Monty Python)></a></p>
+                <p>All the unnecessary knowledge faded away in 1981 when my Father brought home an Apple ][+ computer and the certain knowledge that my future would revolve around computing arrived. When I graduated High School in 1984, I was already a computer professional. I worked for a local Apple dealer, the same one where my Father bought the Apple ][+. When my Father asked me if I was going to go to college, I replied "If I go to college now, I will waste my time and your money." I knew at that time computer education in colleges was based on mainframe computers, time-sharing access and punch cards. No one was teaching about PCs and where they could go.</p>
+                
+                <p>Over the next few years I obtained industry training and certifications in PC hardware, software and networking (in the time before consumer internet access was widely available). In the mid-90s I obtained a position at a certain telephone company working in their research labs, certifying, testing, deploying and supporting networking hardware and software for a nationwide internet backbone. I have since worked for several national auto parts companies, where my love of cars is very helpful. I find I am interested in moving back into the IT industry, however, not having a college degree is greatly hampering my efforts. Hence, my attending RVCC to obtain an associates degree in IT.<p>
+                
+                <p>In my time as a hobbyist and working with personal computers, I have worked on over 40 different microprocessor platforms, over 45 different operating systems, and I have programmed in 17 programming languages.</p>
 
-                <p>Surrounded by screens in a dimly-lit alcove with the hum of my servers in the next room as background music.</p>
+                <p>In my life I have walked on five continents: North America, South America, Europe, Asia and Africa. I have seen the beauty of dawn over the Atlantic and the setting of the sun over the Pacific. I have experienced the streets of Jerusalem, where people have walked for over 3,000 years. I have swum with sharks, played with dolphins, marveled at sea turtles, explored ship wrecks and taken beautiful pictures of sea life. I have yet to score a hole-in-one at golf, but I'm still trying! I witnessed and experienced the heartbreak and the anguish of 9/11. I have been part of a 'Rocky Horror Picture Show' stage cast. I have cradled my new-born sons in my hands and been in awe at the mystery of life.</p>
 
-                <p>In my free time, I like to...</p>
-
-                <p>Scuba dive, golf, play Diablo 4, 3d print something rediculous, read Science Fiction and Fantasy books, historical miniatures gaming, fail at organizing my household.</p>
+                <p>And now, I am a 59 year old Freshman in college!!</p>
 
             </div>
 
+            <!--picture of website author-->
+            <div class="pic-of-me">
+                <img src="img/me-at-23.png" alt="Pic of me at 23"> 
+                <figcaption>Me at 23</figcaption>
+
+            </div>
 
         </section>
 
         <section id="hobbies">
-
+            
+            <!--hobbies section, or how I spend too much money-->
             <h2>Hobbies:</h2>
 
             <ul>
+                <li>Personal Computers and Technology</li>
                 <li>Gaming</li>
-                <li>Scuba diving</li>
+                <li>Scuba diving (Certified Master Diver)</li>
                 <li>Reading SciFi &amp; Fantasy books</li>
                 <li>Photography</li>
                 <li>3D Printing</li>
@@ -89,49 +99,81 @@
 
         <section id="gallery">
 
+            <!--gallery of photos taken by the author-->
             <h2>Photo Gallery</h2>
 
             <hr>
 
             <figure>
-                <img src="img/before-dawn-640w.jpg" alt="Before dawn on the boardwalk">
+                <img src="img/before-dawn-640w.jpg" alt="Before dawn on the boardwalk" class="glow-hover">
                 <figcaption>Before dawn on the boardwalk.</figcaption>
             </figure>
 
             <hr>
 
             <figure>
-                <img src="img/sunrise-wildwood-640w.jpg" alt="Sunrise in Wildwood">
+                <img src="img/sunrise-wildwood-640w.jpg" alt="Sunrise in Wildwood" class="glow-hover">
                 <figcaption>Sunrise at the beach in Wildwood.</figcaption>
             </figure>
 
             <hr>
 
             <figure>
-                <img src="img/winter-trees-640w.jpg" alt="Winter trees with snow on their branches">
-                <figcaption>Winter snow on tree branches.</figcaption>
+                <img src="img/rainbow-640w.jpg" alt="A double rainbow after a storm" class="glow-hover">
+                <figcaption>A double rainbow after a storm.</figcaption>
             </figure>
 
+            <hr>
 
+            <figure>
+                <img src="img/barracuda-man-640w.jpg" alt="A man walking his pet barracuda" class="glow-hover">
+                <figcaption>A man walking his pet barracuda.</figcaption>
+            </figure>
+
+            <hr>
+
+            <figure>
+                <img src="img/diver-fish-640w.jpg" alt="Face to face with a princess trigger fish" class="glow-hover">
+                <figcaption>Face to face with a princess trigger fish.</figcaption>
+            </figure>
+
+            <hr>
+
+            <figure>
+                <img src="img/diver-fish-640w.jpg" alt="A diver surrounded by fish" class="glow-hover">
+                <figcaption>A diver surrounded by fish.</figcaption>
+            </figure>
+
+            <hr>
+            
+            <figure>
+                <img src="img/radio-city-640w.jpg" alt="Radio City Music Hall at night" class="glow-hover">
+                <figcaption>Radio City Music Hall at night.</figcaption>
+            </figure>
+
+            <hr>
+
+            <figure>
+                <img src="img/amethyst-geode-640w.jpg" alt="Amethyst geode at Museum of Natural History" class="glow-hover">
+                <figcaption>Amethyst geode at Museum of Natural History.</figcaption>
+            </figure>
+
+            <hr>
+
+            <figure>
+                <img src="img/winter-trees-640w.jpg" alt="Winter trees with snow on their branches" class="glow-hover">
+                <figcaption>Winter snow on tree branches.</figcaption>
+            </figure>
         </section>
 
         <article id="blog">
 
-            <h2>Random Mumblings From a Drunken Greek Poet</h2>
+            <!--blog section-->
+            <h2>Random Mumblings Blog</h2>
     
             <div>
-                <p>Justo. Phasellus. Dictum. Lectus sapien fames per justo nascetur netus accumsan neque luctus conubia cursus. Malesuada. Habitant cum praesent a velit maecenas cursus orci pretium. Vehicula massa venenatis in sodales natoque pede dictum Cras sociis sociis risus suscipit mi, imperdiet turpis condimentum aliquam convallis suspendisse consequat tempus. Magnis. Massa gravida, mollis dictum malesuada senectus interdum. Praesent varius non orci nunc. Tempus hendrerit ligula. Massa. Sociis cum laoreet interdum habitant feugiat. Aliquet dictumst. Lobortis nunc Aenean amet. Magnis sem. Cum, auctor. Ornare. Pellentesque nam est phasellus. Nec proin pellentesque mollis arcu iaculis tortor, tincidunt quam dis curae; ad hymenaeos lobortis donec curabitur proin porta nisl magnis lectus fringilla eros ante est. Neque leo senectus nisl neque egestas turpis. Eleifend eleifend a primis volutpat. Risus orci. Congue vulputate natoque. Nec massa. Iaculis porttitor lectus venenatis sociosqu mi hendrerit libero diam inceptos odio Dis enim.</p>
-                
-                <p>Ad platea blandit. Ligula posuere phasellus platea porta urna Sociis praesent bibendum. Euismod fermentum rhoncus tempor hac aliquet. Orci phasellus per netus sed sodales hendrerit habitasse a nascetur. A fermentum sociis. Hendrerit. Tristique natoque. Urna magnis. Nostra nam imperdiet aliquet lorem tempor vitae hymenaeos blandit convallis Et nec Id pellentesque congue fringilla ullamcorper volutpat nascetur lacus porta cras tristique tristique, sagittis egestas porttitor ridiculus. Curae; a lobortis nullam tempor bibendum hendrerit ipsum pharetra fusce ridiculus ultricies donec fringilla inceptos. Ligula porta augue Rhoncus fringilla iaculis. Mus metus ipsum lorem eget quam imperdiet facilisi euismod inceptos. Sollicitudin Primis habitasse nam. Ad dictum Eros curabitur torquent ac tempor penatibus magnis. Primis facilisis. Cum hendrerit litora bibendum condimentum scelerisque vulputate fames ultrices. Praesent vehicula, montes etiam tempus orci maecenas ultrices nisl.</p>
-                
-                <p>Laoreet lectus, feugiat sit commodo cras ullamcorper pede justo taciti. Ligula tellus semper scelerisque a viverra donec. Etiam quis tempor at sed sagittis. Placerat. Arcu leo velit libero luctus, lacinia hymenaeos, curabitur felis enim torquent. Habitant elementum porttitor augue vulputate condimentum dui sem. Rhoncus. Ridiculus. Aenean donec. Ullamcorper massa adipiscing sem dictumst pulvinar ac posuere morbi ad luctus facilisis at etiam conubia dui leo Sapien risus. Habitant dolor turpis, bibendum semper ornare venenatis consequat commodo enim dui a torquent leo curabitur curabitur class quis viverra nunc mi quam adipiscing laoreet adipiscing Id torquent pellentesque. Justo a rhoncus viverra laoreet ultrices. Sociosqu ligula tempor mi senectus, ridiculus libero vitae inceptos porttitor proin nunc consectetuer malesuada arcu egestas sit felis. Odio nullam habitant feugiat rutrum ad netus consectetuer urna ullamcorper suscipit tellus. Et nulla mollis lacus. Ridiculus arcu lobortis montes, massa. Purus. Viverra magnis aptent dapibus adipiscing ornare habitasse.</p>
-                
-                <p>Augue. Parturient elementum elit per. Auctor dis. Lectus nam magna nunc pellentesque ultrices lacus. Volutpat felis eget mus fames Habitasse metus, torquent scelerisque tristique fermentum class. Id suscipit platea pellentesque pretium pharetra dignissim mus, faucibus eu ut primis dapibus. Velit conubia pede donec sodales velit amet senectus penatibus. Mi montes nisi at interdum orci massa dapibus condimentum. Dapibus non tempor et etiam risus potenti amet pharetra non aenean elementum semper. Quis. Class venenatis rhoncus. Luctus sociosqu, ut sociis bibendum volutpat sit. Sit risus class porttitor ullamcorper aenean. Montes.</p>
-                
-                <p>Malesuada mattis fusce pulvinar consequat interdum orci auctor ultricies. Ut. Primis suscipit interdum dolor praesent fringilla suscipit facilisi feugiat habitant lorem pharetra interdum sit. Quam elit enim duis mus nascetur blandit magnis. Blandit nec montes eros mattis aliquam quam vulputate lacinia vitae montes rutrum. Lobortis velit velit non vel mi. Sapien eu. Adipiscing euismod eros sollicitudin.</p>
-                
-                <p>Sit ipsum pharetra. Mollis Tellus semper taciti per fermentum mus purus sollicitudin sem elit ipsum orci curabitur. Vitae nibh netus proin turpis aptent eros vehicula venenatis neque proin quisque. Senectus at. Massa nonummy aliquet varius vitae fermentum ornare sem ante, dapibus luctus etiam imperdiet ligula hendrerit felis. Enim cras pellentesque lacus sociis at mus aenean odio, sagittis. Facilisi aliquet egestas Odio mi blandit non placerat ultrices. Dictum imperdiet nunc egestas sodales nisl. Libero magnis nec risus rhoncus hendrerit sed sodales nisl conubia fames aptent morbi morbi aliquet magna mus pulvinar. Nam. Cras natoque hymenaeos penatibus lectus aliquet mi, platea suscipit etiam fermentum. Egestas nulla laoreet purus semper penatibus enim venenatis sagittis ut consectetuer hendrerit vestibulum augue Ante suspendisse.</p>
-                
+                <p>To be finished...</p>
+
             </div>
     
         </article>
